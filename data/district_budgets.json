@@ -1,0 +1,614 @@
+{
+  "metadata": {
+    "source": "Ministry of Road Transport & Highways, Government of India",
+    "fiscal_year": "2025-26",
+    "currency": "INR (Lakhs)",
+    "last_updated": "2026-01-15",
+    "data_portal": "data.gov.in",
+    "license": "NLOD (National License for Open Data)",
+    "contact": "infra-data@gov.in",
+    "version": "2.1.0"
+  },
+  "districts": {
+    "district_pune_central": {
+      "id": "district_pune_central",
+      "name": "Pune Central",
+      "state": "Maharashtra",
+      "pincode_range": "411001-411021",
+      "population": 1200000,
+      "population_density_per_sqkm": 9200,
+      "area_sqkm": 130,
+      "coordinates": { "lat": 18.5204, "lng": 73.8567 },
+      "infrastructure_index": 72,
+      "budgets": {
+        "roads": {
+          "allocated_lakhs": 850,
+          "utilized_percent": 43,
+          "previous_year_allocated": 780,
+          "previous_year_utilized_percent": 61,
+          "pending_projects": 8,
+          "completed_projects": 5
+        },
+        "water": {
+          "allocated_lakhs": 620,
+          "utilized_percent": 67,
+          "previous_year_allocated": 580,
+          "previous_year_utilized_percent": 72,
+          "pending_projects": 3,
+          "completed_projects": 9
+        },
+        "power": {
+          "allocated_lakhs": 480,
+          "utilized_percent": 78,
+          "previous_year_allocated": 440,
+          "previous_year_utilized_percent": 81,
+          "pending_projects": 2,
+          "completed_projects": 11
+        },
+        "healthcare": {
+          "allocated_lakhs": 310,
+          "utilized_percent": 55,
+          "previous_year_allocated": 280,
+          "previous_year_utilized_percent": 60,
+          "pending_projects": 4,
+          "completed_projects": 6
+        },
+        "education": {
+          "allocated_lakhs": 290,
+          "utilized_percent": 62,
+          "previous_year_allocated": 260,
+          "previous_year_utilized_percent": 68,
+          "pending_projects": 3,
+          "completed_projects": 7
+        }
+      },
+      "historical_projects_completed": 23,
+      "citizen_satisfaction_score": 58,
+      "road_complaints_last_90_days": 342,
+      "water_complaints_last_90_days": 89,
+      "power_complaints_last_90_days": 54,
+      "alert_flags": ["LOW_ROAD_UTILIZATION", "PENDING_PROJECTS_HIGH"]
+    },
+    "district_mumbai_north": {
+      "id": "district_mumbai_north",
+      "name": "Mumbai North",
+      "state": "Maharashtra",
+      "pincode_range": "400001-400065",
+      "population": 2800000,
+      "population_density_per_sqkm": 28000,
+      "area_sqkm": 100,
+      "coordinates": { "lat": 19.2183, "lng": 72.9781 },
+      "infrastructure_index": 61,
+      "budgets": {
+        "roads": {
+          "allocated_lakhs": 420,
+          "utilized_percent": 91,
+          "previous_year_allocated": 390,
+          "previous_year_utilized_percent": 88,
+          "pending_projects": 14,
+          "completed_projects": 3
+        },
+        "water": {
+          "allocated_lakhs": 380,
+          "utilized_percent": 97,
+          "previous_year_allocated": 350,
+          "previous_year_utilized_percent": 94,
+          "pending_projects": 9,
+          "completed_projects": 2
+        },
+        "power": {
+          "allocated_lakhs": 290,
+          "utilized_percent": 84,
+          "previous_year_allocated": 270,
+          "previous_year_utilized_percent": 80,
+          "pending_projects": 5,
+          "completed_projects": 4
+        },
+        "healthcare": {
+          "allocated_lakhs": 180,
+          "utilized_percent": 99,
+          "previous_year_allocated": 170,
+          "previous_year_utilized_percent": 98,
+          "pending_projects": 12,
+          "completed_projects": 1
+        },
+        "education": {
+          "allocated_lakhs": 160,
+          "utilized_percent": 95,
+          "previous_year_allocated": 145,
+          "previous_year_utilized_percent": 91,
+          "pending_projects": 7,
+          "completed_projects": 2
+        }
+      },
+      "historical_projects_completed": 12,
+      "citizen_satisfaction_score": 34,
+      "road_complaints_last_90_days": 1847,
+      "water_complaints_last_90_days": 923,
+      "power_complaints_last_90_days": 312,
+      "alert_flags": ["CRITICAL_BUDGET_MISMATCH", "HIGH_POPULATION_DENSITY", "BUDGET_EXHAUSTED_HEALTHCARE"]
+    },
+    "district_delhi_south": {
+      "id": "district_delhi_south",
+      "name": "Delhi South",
+      "state": "Delhi",
+      "pincode_range": "110001-110049",
+      "population": 1850000,
+      "population_density_per_sqkm": 18500,
+      "area_sqkm": 100,
+      "coordinates": { "lat": 28.5355, "lng": 77.3910 },
+      "infrastructure_index": 68,
+      "budgets": {
+        "roads": {
+          "allocated_lakhs": 1200,
+          "utilized_percent": 88,
+          "previous_year_allocated": 1100,
+          "previous_year_utilized_percent": 85,
+          "pending_projects": 6,
+          "completed_projects": 18
+        },
+        "water": {
+          "allocated_lakhs": 950,
+          "utilized_percent": 74,
+          "previous_year_allocated": 880,
+          "previous_year_utilized_percent": 70,
+          "pending_projects": 4,
+          "completed_projects": 12
+        },
+        "power": {
+          "allocated_lakhs": 820,
+          "utilized_percent": 91,
+          "previous_year_allocated": 790,
+          "previous_year_utilized_percent": 87,
+          "pending_projects": 3,
+          "completed_projects": 14
+        },
+        "healthcare": {
+          "allocated_lakhs": 540,
+          "utilized_percent": 69,
+          "previous_year_allocated": 510,
+          "previous_year_utilized_percent": 72,
+          "pending_projects": 5,
+          "completed_projects": 8
+        },
+        "education": {
+          "allocated_lakhs": 480,
+          "utilized_percent": 76,
+          "previous_year_allocated": 450,
+          "previous_year_utilized_percent": 79,
+          "pending_projects": 4,
+          "completed_projects": 10
+        }
+      },
+      "historical_projects_completed": 62,
+      "citizen_satisfaction_score": 63,
+      "road_complaints_last_90_days": 412,
+      "water_complaints_last_90_days": 278,
+      "power_complaints_last_90_days": 134,
+      "alert_flags": []
+    },
+    "district_chennai_east": {
+      "id": "district_chennai_east",
+      "name": "Chennai East",
+      "state": "Tamil Nadu",
+      "pincode_range": "600001-600099",
+      "population": 980000,
+      "population_density_per_sqkm": 7840,
+      "area_sqkm": 125,
+      "coordinates": { "lat": 13.0827, "lng": 80.2707 },
+      "infrastructure_index": 79,
+      "budgets": {
+        "roads": {
+          "allocated_lakhs": 730,
+          "utilized_percent": 82,
+          "previous_year_allocated": 680,
+          "previous_year_utilized_percent": 79,
+          "pending_projects": 3,
+          "completed_projects": 16
+        },
+        "water": {
+          "allocated_lakhs": 580,
+          "utilized_percent": 88,
+          "previous_year_allocated": 540,
+          "previous_year_utilized_percent": 85,
+          "pending_projects": 2,
+          "completed_projects": 14
+        },
+        "power": {
+          "allocated_lakhs": 510,
+          "utilized_percent": 93,
+          "previous_year_allocated": 480,
+          "previous_year_utilized_percent": 89,
+          "pending_projects": 1,
+          "completed_projects": 17
+        },
+        "healthcare": {
+          "allocated_lakhs": 420,
+          "utilized_percent": 86,
+          "previous_year_allocated": 390,
+          "previous_year_utilized_percent": 83,
+          "pending_projects": 2,
+          "completed_projects": 13
+        },
+        "education": {
+          "allocated_lakhs": 390,
+          "utilized_percent": 91,
+          "previous_year_allocated": 360,
+          "previous_year_utilized_percent": 88,
+          "pending_projects": 1,
+          "completed_projects": 15
+        }
+      },
+      "historical_projects_completed": 75,
+      "citizen_satisfaction_score": 76,
+      "road_complaints_last_90_days": 187,
+      "water_complaints_last_90_days": 64,
+      "power_complaints_last_90_days": 29,
+      "alert_flags": []
+    },
+    "district_kolkata_west": {
+      "id": "district_kolkata_west",
+      "name": "Kolkata West",
+      "state": "West Bengal",
+      "pincode_range": "700001-700108",
+      "population": 2100000,
+      "population_density_per_sqkm": 26250,
+      "area_sqkm": 80,
+      "coordinates": { "lat": 22.5726, "lng": 88.3639 },
+      "infrastructure_index": 48,
+      "budgets": {
+        "roads": {
+          "allocated_lakhs": 280,
+          "utilized_percent": 98,
+          "previous_year_allocated": 260,
+          "previous_year_utilized_percent": 96,
+          "pending_projects": 22,
+          "completed_projects": 2
+        },
+        "water": {
+          "allocated_lakhs": 240,
+          "utilized_percent": 99,
+          "previous_year_allocated": 230,
+          "previous_year_utilized_percent": 97,
+          "pending_projects": 18,
+          "completed_projects": 1
+        },
+        "power": {
+          "allocated_lakhs": 190,
+          "utilized_percent": 88,
+          "previous_year_allocated": 180,
+          "previous_year_utilized_percent": 84,
+          "pending_projects": 11,
+          "completed_projects": 3
+        },
+        "healthcare": {
+          "allocated_lakhs": 110,
+          "utilized_percent": 99,
+          "previous_year_allocated": 105,
+          "previous_year_utilized_percent": 98,
+          "pending_projects": 19,
+          "completed_projects": 0
+        },
+        "education": {
+          "allocated_lakhs": 95,
+          "utilized_percent": 97,
+          "previous_year_allocated": 90,
+          "previous_year_utilized_percent": 95,
+          "pending_projects": 14,
+          "completed_projects": 1
+        }
+      },
+      "historical_projects_completed": 7,
+      "citizen_satisfaction_score": 21,
+      "road_complaints_last_90_days": 2934,
+      "water_complaints_last_90_days": 1876,
+      "power_complaints_last_90_days": 643,
+      "alert_flags": ["CRITICAL_BUDGET_MISMATCH", "SEVERE_UNDERFUNDING", "BUDGET_EXHAUSTED_ROADS", "BUDGET_EXHAUSTED_WATER", "BUDGET_EXHAUSTED_HEALTHCARE"]
+    },
+    "district_bengaluru_central": {
+      "id": "district_bengaluru_central",
+      "name": "Bengaluru Central",
+      "state": "Karnataka",
+      "pincode_range": "560001-560099",
+      "population": 1560000,
+      "population_density_per_sqkm": 12000,
+      "area_sqkm": 130,
+      "coordinates": { "lat": 12.9716, "lng": 77.5946 },
+      "infrastructure_index": 65,
+      "budgets": {
+        "roads": {
+          "allocated_lakhs": 680,
+          "utilized_percent": 71,
+          "previous_year_allocated": 620,
+          "previous_year_utilized_percent": 68,
+          "pending_projects": 9,
+          "completed_projects": 8
+        },
+        "water": {
+          "allocated_lakhs": 540,
+          "utilized_percent": 59,
+          "previous_year_allocated": 500,
+          "previous_year_utilized_percent": 63,
+          "pending_projects": 7,
+          "completed_projects": 7
+        },
+        "power": {
+          "allocated_lakhs": 710,
+          "utilized_percent": 83,
+          "previous_year_allocated": 670,
+          "previous_year_utilized_percent": 79,
+          "pending_projects": 4,
+          "completed_projects": 12
+        },
+        "healthcare": {
+          "allocated_lakhs": 380,
+          "utilized_percent": 66,
+          "previous_year_allocated": 350,
+          "previous_year_utilized_percent": 71,
+          "pending_projects": 5,
+          "completed_projects": 9
+        },
+        "education": {
+          "allocated_lakhs": 340,
+          "utilized_percent": 74,
+          "previous_year_allocated": 310,
+          "previous_year_utilized_percent": 77,
+          "pending_projects": 4,
+          "completed_projects": 10
+        }
+      },
+      "historical_projects_completed": 46,
+      "citizen_satisfaction_score": 54,
+      "road_complaints_last_90_days": 678,
+      "water_complaints_last_90_days": 345,
+      "power_complaints_last_90_days": 189,
+      "alert_flags": ["MODERATE_WATER_UNDERUTILIZATION"]
+    },
+    "district_hyderabad_north": {
+      "id": "district_hyderabad_north",
+      "name": "Hyderabad North",
+      "state": "Telangana",
+      "pincode_range": "500001-500090",
+      "population": 1340000,
+      "population_density_per_sqkm": 10308,
+      "area_sqkm": 130,
+      "coordinates": { "lat": 17.3850, "lng": 78.4867 },
+      "infrastructure_index": 70,
+      "budgets": {
+        "roads": {
+          "allocated_lakhs": 920,
+          "utilized_percent": 64,
+          "previous_year_allocated": 860,
+          "previous_year_utilized_percent": 58,
+          "pending_projects": 6,
+          "completed_projects": 11
+        },
+        "water": {
+          "allocated_lakhs": 700,
+          "utilized_percent": 77,
+          "previous_year_allocated": 650,
+          "previous_year_utilized_percent": 74,
+          "pending_projects": 3,
+          "completed_projects": 13
+        },
+        "power": {
+          "allocated_lakhs": 560,
+          "utilized_percent": 85,
+          "previous_year_allocated": 520,
+          "previous_year_utilized_percent": 83,
+          "pending_projects": 2,
+          "completed_projects": 15
+        },
+        "healthcare": {
+          "allocated_lakhs": 440,
+          "utilized_percent": 71,
+          "previous_year_allocated": 410,
+          "previous_year_utilized_percent": 68,
+          "pending_projects": 4,
+          "completed_projects": 10
+        },
+        "education": {
+          "allocated_lakhs": 400,
+          "utilized_percent": 78,
+          "previous_year_allocated": 370,
+          "previous_year_utilized_percent": 75,
+          "pending_projects": 3,
+          "completed_projects": 11
+        }
+      },
+      "historical_projects_completed": 60,
+      "citizen_satisfaction_score": 67,
+      "road_complaints_last_90_days": 289,
+      "water_complaints_last_90_days": 112,
+      "power_complaints_last_90_days": 67,
+      "alert_flags": []
+    },
+    "district_ahmedabad_east": {
+      "id": "district_ahmedabad_east",
+      "name": "Ahmedabad East",
+      "state": "Gujarat",
+      "pincode_range": "380001-380063",
+      "population": 890000,
+      "population_density_per_sqkm": 6346,
+      "area_sqkm": 140,
+      "coordinates": { "lat": 23.0225, "lng": 72.5714 },
+      "infrastructure_index": 74,
+      "budgets": {
+        "roads": {
+          "allocated_lakhs": 560,
+          "utilized_percent": 79,
+          "previous_year_allocated": 520,
+          "previous_year_utilized_percent": 76,
+          "pending_projects": 4,
+          "completed_projects": 12
+        },
+        "water": {
+          "allocated_lakhs": 480,
+          "utilized_percent": 83,
+          "previous_year_allocated": 450,
+          "previous_year_utilized_percent": 80,
+          "pending_projects": 3,
+          "completed_projects": 11
+        },
+        "power": {
+          "allocated_lakhs": 420,
+          "utilized_percent": 88,
+          "previous_year_allocated": 390,
+          "previous_year_utilized_percent": 85,
+          "pending_projects": 2,
+          "completed_projects": 13
+        },
+        "healthcare": {
+          "allocated_lakhs": 360,
+          "utilized_percent": 74,
+          "previous_year_allocated": 330,
+          "previous_year_utilized_percent": 71,
+          "pending_projects": 3,
+          "completed_projects": 9
+        },
+        "education": {
+          "allocated_lakhs": 320,
+          "utilized_percent": 81,
+          "previous_year_allocated": 295,
+          "previous_year_utilized_percent": 78,
+          "pending_projects": 2,
+          "completed_projects": 10
+        }
+      },
+      "historical_projects_completed": 55,
+      "citizen_satisfaction_score": 71,
+      "road_complaints_last_90_days": 198,
+      "water_complaints_last_90_days": 87,
+      "power_complaints_last_90_days": 43,
+      "alert_flags": []
+    },
+    "district_jaipur_central": {
+      "id": "district_jaipur_central",
+      "name": "Jaipur Central",
+      "state": "Rajasthan",
+      "pincode_range": "302001-302039",
+      "population": 1100000,
+      "population_density_per_sqkm": 5500,
+      "area_sqkm": 200,
+      "coordinates": { "lat": 26.9124, "lng": 75.7873 },
+      "infrastructure_index": 52,
+      "budgets": {
+        "roads": {
+          "allocated_lakhs": 340,
+          "utilized_percent": 96,
+          "previous_year_allocated": 320,
+          "previous_year_utilized_percent": 93,
+          "pending_projects": 17,
+          "completed_projects": 3
+        },
+        "water": {
+          "allocated_lakhs": 290,
+          "utilized_percent": 88,
+          "previous_year_allocated": 270,
+          "previous_year_utilized_percent": 85,
+          "pending_projects": 10,
+          "completed_projects": 4
+        },
+        "power": {
+          "allocated_lakhs": 250,
+          "utilized_percent": 76,
+          "previous_year_allocated": 230,
+          "previous_year_utilized_percent": 73,
+          "pending_projects": 7,
+          "completed_projects": 5
+        },
+        "healthcare": {
+          "allocated_lakhs": 150,
+          "utilized_percent": 91,
+          "previous_year_allocated": 140,
+          "previous_year_utilized_percent": 89,
+          "pending_projects": 13,
+          "completed_projects": 2
+        },
+        "education": {
+          "allocated_lakhs": 130,
+          "utilized_percent": 84,
+          "previous_year_allocated": 120,
+          "previous_year_utilized_percent": 80,
+          "pending_projects": 9,
+          "completed_projects": 3
+        }
+      },
+      "historical_projects_completed": 17,
+      "citizen_satisfaction_score": 39,
+      "road_complaints_last_90_days": 1123,
+      "water_complaints_last_90_days": 567,
+      "power_complaints_last_90_days": 234,
+      "alert_flags": ["CRITICAL_BUDGET_MISMATCH", "HIGH_COMPLAINT_VOLUME", "BUDGET_NEARLY_EXHAUSTED_ROADS"]
+    },
+    "district_lucknow_west": {
+      "id": "district_lucknow_west",
+      "name": "Lucknow West",
+      "state": "Uttar Pradesh",
+      "pincode_range": "226001-226031",
+      "population": 1450000,
+      "population_density_per_sqkm": 6045,
+      "area_sqkm": 240,
+      "coordinates": { "lat": 26.8467, "lng": 80.9462 },
+      "infrastructure_index": 41,
+      "budgets": {
+        "roads": {
+          "allocated_lakhs": 310,
+          "utilized_percent": 99,
+          "previous_year_allocated": 290,
+          "previous_year_utilized_percent": 97,
+          "pending_projects": 28,
+          "completed_projects": 1
+        },
+        "water": {
+          "allocated_lakhs": 210,
+          "utilized_percent": 99,
+          "previous_year_allocated": 200,
+          "previous_year_utilized_percent": 98,
+          "pending_projects": 21,
+          "completed_projects": 0
+        },
+        "power": {
+          "allocated_lakhs": 170,
+          "utilized_percent": 92,
+          "previous_year_allocated": 160,
+          "previous_year_utilized_percent": 89,
+          "pending_projects": 15,
+          "completed_projects": 2
+        },
+        "healthcare": {
+          "allocated_lakhs": 95,
+          "utilized_percent": 99,
+          "previous_year_allocated": 90,
+          "previous_year_utilized_percent": 98,
+          "pending_projects": 23,
+          "completed_projects": 0
+        },
+        "education": {
+          "allocated_lakhs": 85,
+          "utilized_percent": 97,
+          "previous_year_allocated": 80,
+          "previous_year_utilized_percent": 95,
+          "pending_projects": 18,
+          "completed_projects": 1
+        }
+      },
+      "historical_projects_completed": 4,
+      "citizen_satisfaction_score": 17,
+      "road_complaints_last_90_days": 3412,
+      "water_complaints_last_90_days": 2103,
+      "power_complaints_last_90_days": 789,
+      "alert_flags": ["CRITICAL_BUDGET_MISMATCH", "SEVERE_UNDERFUNDING", "WORST_PERFORMING_DISTRICT", "BUDGET_EXHAUSTED_ALL_CATEGORIES"]
+    }
+  },
+  "summary_statistics": {
+    "total_districts": 10,
+    "total_road_budget_lakhs": 7090,
+    "total_population_covered": 15270000,
+    "avg_citizen_satisfaction": 50,
+    "critical_mismatch_districts": ["district_mumbai_north", "district_kolkata_west", "district_jaipur_central", "district_lucknow_west"],
+    "top_performing_district": "district_chennai_east",
+    "worst_performing_district": "district_lucknow_west",
+    "generated_at": "2026-01-15T00:00:00Z"
+  }
+}

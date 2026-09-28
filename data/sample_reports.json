@@ -1,0 +1,1002 @@
+[
+  {
+    "report_id": "req_001",
+    "timestamp": "2026-09-01T08:23:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "hi-IN",
+    "original_text": "सड़क पर बहुत बड़ा गड्ढा है, मेरी गाड़ी का टायर फट गया। कब ठीक होगा?",
+    "translated_english_text": "There is a very large pothole on the road, my car's tyre burst. When will it be fixed?",
+    "user_id": "telegram_user_402",
+    "pincode": "411001",
+    "district": "Pune Central",
+    "gemini_analysis": {
+      "category": "Roads",
+      "urgency": 4,
+      "key_issue": "large pothole causing vehicle damage",
+      "sentiment": "Frustrated",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_002",
+    "timestamp": "2026-09-01T09:14:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "en-US",
+    "original_text": "Water supply has been completely cut off for 3 days in our locality. Families are struggling. We have submitted multiple complaints but no response.",
+    "translated_english_text": "Water supply has been completely cut off for 3 days in our locality. Families are struggling. We have submitted multiple complaints but no response.",
+    "user_id": "telegram_user_1021",
+    "pincode": "400065",
+    "district": "Mumbai North",
+    "gemini_analysis": {
+      "category": "Water",
+      "urgency": 5,
+      "key_issue": "complete water supply disruption 3 days",
+      "sentiment": "Desperate",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_003",
+    "timestamp": "2026-09-01T10:02:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "ta-IN",
+    "original_text": "எங்கள் தெருவில் மின்சாரம் போய் 2 நாட்கள் ஆகிவிட்டன. குழந்தைகள் படிக்க முடியவில்லை.",
+    "translated_english_text": "It has been 2 days since power went out in our street. Children cannot study.",
+    "user_id": "telegram_user_887",
+    "pincode": "600001",
+    "district": "Chennai East",
+    "gemini_analysis": {
+      "category": "Power",
+      "urgency": 4,
+      "key_issue": "48-hour power outage affecting children's education",
+      "sentiment": "Concerned",
+      "affected_population_estimate": "Medium",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_004",
+    "timestamp": "2026-09-01T11:45:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "bn-IN",
+    "original_text": "আমাদের এলাকায় রাস্তা একদম ভেঙে গেছে। বর্ষায় জল জমে থাকে। হাঁটাও যায় না।",
+    "translated_english_text": "The road in our area is completely broken. Water stagnates during rains. Even walking is difficult.",
+    "user_id": "telegram_user_2341",
+    "pincode": "700001",
+    "district": "Kolkata West",
+    "gemini_analysis": {
+      "category": "Roads",
+      "urgency": 5,
+      "key_issue": "road completely broken with waterlogging",
+      "sentiment": "Desperate",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_005",
+    "timestamp": "2026-09-01T13:30:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "ru-RU",
+    "original_text": "Дороги в плохом состоянии. Много ям. Нужен ремонт срочно.",
+    "translated_english_text": "Roads are in bad condition. Many potholes. Urgent repair needed.",
+    "user_id": "telegram_user_5512",
+    "pincode": "110001",
+    "district": "Delhi South",
+    "gemini_analysis": {
+      "category": "Roads",
+      "urgency": 3,
+      "key_issue": "multiple potholes requiring urgent repair",
+      "sentiment": "Frustrated",
+      "affected_population_estimate": "Medium",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_006",
+    "timestamp": "2026-09-01T14:15:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "pt-BR",
+    "original_text": "O abastecimento de água está irregular. Às vezes falta por horas. Precisamos de solução urgente.",
+    "translated_english_text": "Water supply is irregular. Sometimes it's absent for hours. We need an urgent solution.",
+    "user_id": "telegram_user_7734",
+    "pincode": "560001",
+    "district": "Bengaluru Central",
+    "gemini_analysis": {
+      "category": "Water",
+      "urgency": 3,
+      "key_issue": "irregular water supply with frequent gaps",
+      "sentiment": "Concerned",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_007",
+    "timestamp": "2026-09-01T15:00:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "te-IN",
+    "original_text": "మా వీధిలో చెత్త కుప్పలు పడి ఉన్నాయి. వారాల నుంచి తీయలేదు. దయచేసి చర్య తీసుకోండి.",
+    "translated_english_text": "There are garbage heaps lying in our street. They haven't been cleared for weeks. Please take action.",
+    "user_id": "telegram_user_9021",
+    "pincode": "500001",
+    "district": "Hyderabad North",
+    "gemini_analysis": {
+      "category": "Healthcare",
+      "urgency": 3,
+      "key_issue": "garbage heap sanitation issue weeks without clearance",
+      "sentiment": "Frustrated",
+      "affected_population_estimate": "Medium",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_008",
+    "timestamp": "2026-09-01T16:22:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "hi-IN",
+    "original_text": "अस्पताल में डॉक्टर नहीं हैं। बच्चे को बुखार है, दूसरे ज़िले जाना पड़ेगा। यह बहुत बड़ी समस्या है।",
+    "translated_english_text": "There are no doctors at the hospital. My child has fever and I will have to go to another district. This is a very big problem.",
+    "user_id": "telegram_user_3345",
+    "pincode": "226001",
+    "district": "Lucknow West",
+    "gemini_analysis": {
+      "category": "Healthcare",
+      "urgency": 5,
+      "key_issue": "no doctors at local hospital, child needs medical attention",
+      "sentiment": "Desperate",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_009",
+    "timestamp": "2026-09-01T17:10:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "hi-IN",
+    "original_text": "स्कूल की छत टूटी हुई है। बारिश में पानी अंदर आता है। बच्चे पढ़ नहीं सकते।",
+    "translated_english_text": "The school roof is broken. Water comes inside during rain. Children cannot study.",
+    "user_id": "telegram_user_6612",
+    "pincode": "302001",
+    "district": "Jaipur Central",
+    "gemini_analysis": {
+      "category": "Education",
+      "urgency": 4,
+      "key_issue": "school roof damaged causing learning disruption",
+      "sentiment": "Worried",
+      "affected_population_estimate": "Medium",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_010",
+    "timestamp": "2026-09-01T18:45:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "en-US",
+    "original_text": "Power cuts happening every day for 6-8 hours. Small businesses are losing lakhs. Internet goes down with power. This is unacceptable in 2026.",
+    "translated_english_text": "Power cuts happening every day for 6-8 hours. Small businesses are losing lakhs. Internet goes down with power. This is unacceptable in 2026.",
+    "user_id": "telegram_user_8821",
+    "pincode": "380001",
+    "district": "Ahmedabad East",
+    "gemini_analysis": {
+      "category": "Power",
+      "urgency": 4,
+      "key_issue": "daily 6-8 hour power cuts harming businesses",
+      "sentiment": "Angry",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_011",
+    "timestamp": "2026-09-02T07:30:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "bn-IN",
+    "original_text": "পানীয় জলে দুর্গন্ধ আসছে। অনেকে অসুস্থ হয়ে পড়ছেন। এটা জরুরি সমস্যা।",
+    "translated_english_text": "Drinking water has a foul smell. Many people are falling ill. This is an urgent problem.",
+    "user_id": "telegram_user_4421",
+    "pincode": "700050",
+    "district": "Kolkata West",
+    "gemini_analysis": {
+      "category": "Water",
+      "urgency": 5,
+      "key_issue": "contaminated drinking water causing illness",
+      "sentiment": "Alarmed",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_012",
+    "timestamp": "2026-09-02T08:15:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "ta-IN",
+    "original_text": "சாலையில் வெளிச்சம் இல்லை. இரவில் கொள்ளை நடக்கிறது. விளக்குகள் மாதங்களாக சரி செய்யப்படவில்லை.",
+    "translated_english_text": "There is no light on the road. Robberies are happening at night. The lights have not been repaired for months.",
+    "user_id": "telegram_user_1122",
+    "pincode": "600020",
+    "district": "Chennai East",
+    "gemini_analysis": {
+      "category": "Roads",
+      "urgency": 4,
+      "key_issue": "streetlights non-functional creating safety hazard",
+      "sentiment": "Scared",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_013",
+    "timestamp": "2026-09-02T09:00:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "hi-IN",
+    "original_text": "नाले में कचरा भर गया है। बारिश में घरों में पानी घुस जाता है। नगर पालिका को शिकायत दी है लेकिन कोई नहीं आया।",
+    "translated_english_text": "Drain is clogged with garbage. During rain water enters homes. Complained to municipality but nobody came.",
+    "user_id": "telegram_user_7721",
+    "pincode": "411005",
+    "district": "Pune Central",
+    "gemini_analysis": {
+      "category": "Water",
+      "urgency": 4,
+      "key_issue": "clogged drain causing home flooding during rain",
+      "sentiment": "Frustrated",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_014",
+    "timestamp": "2026-09-02T10:30:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "ru-RU",
+    "original_text": "Больница закрыта. Нет медикаментов. Люди едут в соседний район.",
+    "translated_english_text": "Hospital is closed. No medications. People are going to the neighbouring district.",
+    "user_id": "telegram_user_6644",
+    "pincode": "700080",
+    "district": "Kolkata West",
+    "gemini_analysis": {
+      "category": "Healthcare",
+      "urgency": 5,
+      "key_issue": "hospital closed no medications available",
+      "sentiment": "Desperate",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_015",
+    "timestamp": "2026-09-02T11:15:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "te-IN",
+    "original_text": "మా పాఠశాలలో టాయిలెట్లు పని చేయడం లేదు. అమ్మాయిలు స్కూలుకు రావడం మానేశారు.",
+    "translated_english_text": "Toilets in our school are not working. Girls have stopped coming to school.",
+    "user_id": "telegram_user_3381",
+    "pincode": "500030",
+    "district": "Hyderabad North",
+    "gemini_analysis": {
+      "category": "Education",
+      "urgency": 5,
+      "key_issue": "broken school toilets causing girls to drop out",
+      "sentiment": "Alarmed",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_016",
+    "timestamp": "2026-09-02T12:00:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "en-US",
+    "original_text": "The flyover near sector 7 has cracks developing. This is a serious safety issue. Please inspect immediately.",
+    "translated_english_text": "The flyover near sector 7 has cracks developing. This is a serious safety issue. Please inspect immediately.",
+    "user_id": "telegram_user_9981",
+    "pincode": "110020",
+    "district": "Delhi South",
+    "gemini_analysis": {
+      "category": "Roads",
+      "urgency": 5,
+      "key_issue": "flyover structural cracks safety emergency",
+      "sentiment": "Alarmed",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_017",
+    "timestamp": "2026-09-02T13:45:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "hi-IN",
+    "original_text": "बिजली का खंभा गिर गया है सड़क पर। बहुत खतरनाक है। जल्दी हटाएं।",
+    "translated_english_text": "An electricity pole has fallen on the road. It is very dangerous. Please remove immediately.",
+    "user_id": "telegram_user_2298",
+    "pincode": "226010",
+    "district": "Lucknow West",
+    "gemini_analysis": {
+      "category": "Power",
+      "urgency": 5,
+      "key_issue": "fallen electric pole on road safety emergency",
+      "sentiment": "Scared",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_018",
+    "timestamp": "2026-09-02T14:30:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "pt-BR",
+    "original_text": "A escola está sem professor de matemática há 2 meses. As crianças estão sofrendo.",
+    "translated_english_text": "The school has been without a math teacher for 2 months. The children are suffering.",
+    "user_id": "telegram_user_4561",
+    "pincode": "302010",
+    "district": "Jaipur Central",
+    "gemini_analysis": {
+      "category": "Education",
+      "urgency": 4,
+      "key_issue": "school lacking teacher for 2 months",
+      "sentiment": "Concerned",
+      "affected_population_estimate": "Medium",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_019",
+    "timestamp": "2026-09-02T15:15:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "ta-IN",
+    "original_text": "மழை நீர் தேங்கி உள்ளது. கொசுக்கள் பெருகியுள்ளன. டெங்கு வர வாய்ப்புள்ளது.",
+    "translated_english_text": "Rainwater is stagnating. Mosquitoes are multiplying. There is a risk of dengue.",
+    "user_id": "telegram_user_8834",
+    "pincode": "600040",
+    "district": "Chennai East",
+    "gemini_analysis": {
+      "category": "Healthcare",
+      "urgency": 4,
+      "key_issue": "stagnant water causing mosquito breeding dengue risk",
+      "sentiment": "Worried",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_020",
+    "timestamp": "2026-09-02T16:00:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "hi-IN",
+    "original_text": "पानी का मीटर खराब है। गलत बिल आ रहा है। शिकायत करने पर कोई सुनता नहीं।",
+    "translated_english_text": "Water meter is faulty. Getting incorrect bill. No one listens when we complain.",
+    "user_id": "telegram_user_5543",
+    "pincode": "380020",
+    "district": "Ahmedabad East",
+    "gemini_analysis": {
+      "category": "Water",
+      "urgency": 2,
+      "key_issue": "faulty water meter incorrect billing",
+      "sentiment": "Frustrated",
+      "affected_population_estimate": "Low",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_021",
+    "timestamp": "2026-09-03T07:00:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "bn-IN",
+    "original_text": "বিদ্যালয়ে বই নেই। শিক্ষকরা আসেন না। সরকারি স্কুল কার্যত বন্ধ।",
+    "translated_english_text": "There are no books in school. Teachers do not come. Government school is practically shut.",
+    "user_id": "telegram_user_1198",
+    "pincode": "700100",
+    "district": "Kolkata West",
+    "gemini_analysis": {
+      "category": "Education",
+      "urgency": 5,
+      "key_issue": "school non-functional no books or teachers",
+      "sentiment": "Desperate",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_022",
+    "timestamp": "2026-09-03T08:30:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "en-US",
+    "original_text": "Transformer blew up last night. Our entire colony is without power. No estimated restoration time given by BESCOM.",
+    "translated_english_text": "Transformer blew up last night. Our entire colony is without power. No estimated restoration time given by BESCOM.",
+    "user_id": "telegram_user_3312",
+    "pincode": "560020",
+    "district": "Bengaluru Central",
+    "gemini_analysis": {
+      "category": "Power",
+      "urgency": 5,
+      "key_issue": "transformer failure entire colony without power",
+      "sentiment": "Angry",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_023",
+    "timestamp": "2026-09-03T09:15:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "hi-IN",
+    "original_text": "मेरे बच्चे की एम्बुलेंस एक घंटे बाद आई। जब तक आई तब तक हम खुद अस्पताल पहुंच गए। यह सेवा किसी काम की नहीं।",
+    "translated_english_text": "The ambulance for my child came after one hour. By the time it arrived we had already reached the hospital ourselves. This service is useless.",
+    "user_id": "telegram_user_8832",
+    "pincode": "226025",
+    "district": "Lucknow West",
+    "gemini_analysis": {
+      "category": "Healthcare",
+      "urgency": 4,
+      "key_issue": "ambulance 1 hour delay medical emergency",
+      "sentiment": "Angry",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_024",
+    "timestamp": "2026-09-03T10:00:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "ta-IN",
+    "original_text": "குடிநீர் தொட்டி வாரத்திற்கு ஒரே ஒரு முறை வருகிறது. அதுவும் அரை மணி நேரம்தான்.",
+    "translated_english_text": "The drinking water tanker comes only once a week. And only for half an hour.",
+    "user_id": "telegram_user_7723",
+    "pincode": "600060",
+    "district": "Chennai East",
+    "gemini_analysis": {
+      "category": "Water",
+      "urgency": 3,
+      "key_issue": "water tanker supply inadequate once weekly 30 min",
+      "sentiment": "Frustrated",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_025",
+    "timestamp": "2026-09-03T11:00:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "ru-RU",
+    "original_text": "Нет освещения в школе. Дети учатся в темноте. Срочно нужны лампочки и электрик.",
+    "translated_english_text": "No lighting in school. Children are studying in the dark. Urgently need bulbs and an electrician.",
+    "user_id": "telegram_user_2234",
+    "pincode": "500050",
+    "district": "Hyderabad North",
+    "gemini_analysis": {
+      "category": "Education",
+      "urgency": 3,
+      "key_issue": "school without electricity children studying in dark",
+      "sentiment": "Concerned",
+      "affected_population_estimate": "Medium",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_026",
+    "timestamp": "2026-09-03T12:30:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "hi-IN",
+    "original_text": "सड़क के किनारे खड्डा खोदकर छोड़ दिया है। कोई बैरिकेड नहीं, कोई बोर्ड नहीं। रात को कोई गिरेगा तो ज़िम्मेदार कौन होगा?",
+    "translated_english_text": "A ditch has been dug on the side of the road and left open. No barricade, no sign board. Who will be responsible if someone falls at night?",
+    "user_id": "telegram_user_6631",
+    "pincode": "411010",
+    "district": "Pune Central",
+    "gemini_analysis": {
+      "category": "Roads",
+      "urgency": 4,
+      "key_issue": "uncovered road excavation no safety barriers public danger",
+      "sentiment": "Angry",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_027",
+    "timestamp": "2026-09-03T13:15:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "te-IN",
+    "original_text": "మా ఏరియాలో నీటి పైపులు పగిలిపోయాయి. రాత్రి అంతా నీళ్ళు వృథా అవుతున్నాయి. అధికారులు పట్టించుకోవడం లేదు.",
+    "translated_english_text": "Water pipes have burst in our area. Water is wasting throughout the night. Authorities are not paying attention.",
+    "user_id": "telegram_user_4498",
+    "pincode": "500060",
+    "district": "Hyderabad North",
+    "gemini_analysis": {
+      "category": "Water",
+      "urgency": 4,
+      "key_issue": "burst water pipe continuous water wastage",
+      "sentiment": "Frustrated",
+      "affected_population_estimate": "Medium",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_028",
+    "timestamp": "2026-09-03T14:00:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "bn-IN",
+    "original_text": "বিদ্যুৎ বিল অনেক বেশি এসেছে। আমি মিটার রিডিং দেখেছি, হিসেব মেলে না। অফিসে গেলে কেউ সাহায্য করে না।",
+    "translated_english_text": "Electricity bill has come very high. I checked the meter reading, the calculation does not match. Nobody helps when I go to the office.",
+    "user_id": "telegram_user_3378",
+    "pincode": "700020",
+    "district": "Kolkata West",
+    "gemini_analysis": {
+      "category": "Power",
+      "urgency": 2,
+      "key_issue": "inflated electricity bill metering discrepancy",
+      "sentiment": "Frustrated",
+      "affected_population_estimate": "Low",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_029",
+    "timestamp": "2026-09-03T15:30:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "hi-IN",
+    "original_text": "सरकारी अस्पताल में एक्स-रे मशीन टूटी पड़ी है। मरीजों को निजी अस्पताल भेजा जा रहा है जहां बहुत खर्चा है।",
+    "translated_english_text": "The X-ray machine in government hospital is broken. Patients are being sent to private hospitals where it is very expensive.",
+    "user_id": "telegram_user_5582",
+    "pincode": "302020",
+    "district": "Jaipur Central",
+    "gemini_analysis": {
+      "category": "Healthcare",
+      "urgency": 4,
+      "key_issue": "x-ray machine broken patients diverted to costly private hospitals",
+      "sentiment": "Concerned",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_030",
+    "timestamp": "2026-09-03T16:15:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "en-US",
+    "original_text": "The main road connecting our area to highway is completely dug up for a pipeline project that started 8 months ago and shows no sign of completion. Commute has become a nightmare.",
+    "translated_english_text": "The main road connecting our area to highway is completely dug up for a pipeline project that started 8 months ago and shows no sign of completion. Commute has become a nightmare.",
+    "user_id": "telegram_user_7711",
+    "pincode": "400040",
+    "district": "Mumbai North",
+    "gemini_analysis": {
+      "category": "Roads",
+      "urgency": 4,
+      "key_issue": "road excavation 8 months incomplete no timeline",
+      "sentiment": "Angry",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_031",
+    "timestamp": "2026-09-04T07:45:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "hi-IN",
+    "original_text": "बिजली कट के कारण हमारे कोल्ड स्टोरेज में रखा सारा माल खराब हो गया। हमें बहुत नुकसान हुआ।",
+    "translated_english_text": "Due to power cuts all the goods stored in our cold storage have spoiled. We have suffered huge losses.",
+    "user_id": "telegram_user_2267",
+    "pincode": "226015",
+    "district": "Lucknow West",
+    "gemini_analysis": {
+      "category": "Power",
+      "urgency": 4,
+      "key_issue": "power cut causing cold storage failure business loss",
+      "sentiment": "Desperate",
+      "affected_population_estimate": "Medium",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_032",
+    "timestamp": "2026-09-04T08:30:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "ta-IN",
+    "original_text": "சாலை ஓரத்தில் உள்ள மழைநீர் வடிகால் அடைத்துள்ளது. மழை வந்தால் வெள்ளம் வரும். நிர்வாகம் கவலைப்படவில்லை.",
+    "translated_english_text": "The storm drain on the roadside is blocked. If it rains there will be flooding. Administration is not concerned.",
+    "user_id": "telegram_user_9912",
+    "pincode": "600080",
+    "district": "Chennai East",
+    "gemini_analysis": {
+      "category": "Water",
+      "urgency": 3,
+      "key_issue": "blocked storm drain flood risk during rain",
+      "sentiment": "Worried",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_033",
+    "timestamp": "2026-09-04T09:15:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "pt-BR",
+    "original_text": "Há um buraco enorme na rua principal. Já causou vários acidentes. Ninguém conserta.",
+    "translated_english_text": "There is a huge hole in the main street. It has already caused several accidents. Nobody fixes it.",
+    "user_id": "telegram_user_8843",
+    "pincode": "380040",
+    "district": "Ahmedabad East",
+    "gemini_analysis": {
+      "category": "Roads",
+      "urgency": 4,
+      "key_issue": "large pothole on main road multiple accidents",
+      "sentiment": "Frustrated",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_034",
+    "timestamp": "2026-09-04T10:00:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "hi-IN",
+    "original_text": "स्कूल में मिड-डे मील नहीं मिल रहा। बच्चे भूखे बैठे रहते हैं। पिछले हफ्ते से बंद है।",
+    "translated_english_text": "Mid-day meal is not being served in school. Children sit hungry. It has been stopped since last week.",
+    "user_id": "telegram_user_4456",
+    "pincode": "700060",
+    "district": "Kolkata West",
+    "gemini_analysis": {
+      "category": "Education",
+      "urgency": 4,
+      "key_issue": "mid-day meal stopped children going hungry at school",
+      "sentiment": "Alarmed",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_035",
+    "timestamp": "2026-09-04T11:30:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "te-IN",
+    "original_text": "మా కాలనీలో అర్ధరాత్రి వరకు నీళ్ళు రావు. పని నిమిత్తం తెల్లవారు జామున లేచి నీళ్ళు పట్టుకోవాలి.",
+    "translated_english_text": "Water does not come in our colony until midnight. We have to wake up at dawn to fetch water before work.",
+    "user_id": "telegram_user_6689",
+    "pincode": "500070",
+    "district": "Hyderabad North",
+    "gemini_analysis": {
+      "category": "Water",
+      "urgency": 3,
+      "key_issue": "water supply only at midnight disrupting daily life",
+      "sentiment": "Tired",
+      "affected_population_estimate": "Medium",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_036",
+    "timestamp": "2026-09-04T12:15:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "en-US",
+    "original_text": "Multiple streetlights on MG Road have been dead for over 2 months. It has become a hotspot for crime. Please escalate.",
+    "translated_english_text": "Multiple streetlights on MG Road have been dead for over 2 months. It has become a hotspot for crime. Please escalate.",
+    "user_id": "telegram_user_1145",
+    "pincode": "560010",
+    "district": "Bengaluru Central",
+    "gemini_analysis": {
+      "category": "Power",
+      "urgency": 4,
+      "key_issue": "streetlights non-functional 2 months crime hotspot",
+      "sentiment": "Scared",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_037",
+    "timestamp": "2026-09-04T13:00:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "hi-IN",
+    "original_text": "दिल्ली में यमुना का पानी घरों तक आ रहा है। बाढ़ का खतरा है। प्रशासन क्या कर रहा है?",
+    "translated_english_text": "Yamuna water is reaching houses in Delhi. There is a flood threat. What is the administration doing?",
+    "user_id": "telegram_user_9934",
+    "pincode": "110030",
+    "district": "Delhi South",
+    "gemini_analysis": {
+      "category": "Water",
+      "urgency": 5,
+      "key_issue": "river flooding residential areas administration inactive",
+      "sentiment": "Panicked",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_038",
+    "timestamp": "2026-09-04T14:30:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "bn-IN",
+    "original_text": "রাস্তার মাঝখানে গাছ পড়ে আছে। ঝড়ের পর থেকে কেউ সরায়নি। যান চলাচল বন্ধ।",
+    "translated_english_text": "A tree has fallen in the middle of the road. No one has cleared it since the storm. Traffic has stopped.",
+    "user_id": "telegram_user_7765",
+    "pincode": "700030",
+    "district": "Kolkata West",
+    "gemini_analysis": {
+      "category": "Roads",
+      "urgency": 4,
+      "key_issue": "fallen tree blocking road traffic stopped",
+      "sentiment": "Frustrated",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_039",
+    "timestamp": "2026-09-04T15:15:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "ta-IN",
+    "original_text": "அரசு மருத்துவமனையில் இரத்தம் இல்லை. என் உறவினருக்கு அவசர அறுவைசிகிச்சை தேவை. யாரை அணுகுவது?",
+    "translated_english_text": "Government hospital has no blood. My relative needs emergency surgery. Who should I approach?",
+    "user_id": "telegram_user_3356",
+    "pincode": "600090",
+    "district": "Chennai East",
+    "gemini_analysis": {
+      "category": "Healthcare",
+      "urgency": 5,
+      "key_issue": "blood bank empty patient needs emergency surgery",
+      "sentiment": "Desperate",
+      "affected_population_estimate": "Low",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_040",
+    "timestamp": "2026-09-04T16:00:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "en-US",
+    "original_text": "Road maintenance in our area has been outsourced to a private contractor who never shows up. The roads are the worst I have seen in 10 years.",
+    "translated_english_text": "Road maintenance in our area has been outsourced to a private contractor who never shows up. The roads are the worst I have seen in 10 years.",
+    "user_id": "telegram_user_6623",
+    "pincode": "411015",
+    "district": "Pune Central",
+    "gemini_analysis": {
+      "category": "Roads",
+      "urgency": 3,
+      "key_issue": "contractor not performing road maintenance worst in decade",
+      "sentiment": "Angry",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_041",
+    "timestamp": "2026-09-05T07:30:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "hi-IN",
+    "original_text": "नए पानी की टंकी बनाई गई लेकिन जोड़ने की पाइप नहीं लगाई। ऊपर से टंकी में दरार आ गई है। सरकारी पैसा बर्बाद।",
+    "translated_english_text": "A new water tank was built but the connecting pipes were not installed. On top of that the tank has developed a crack. Government money wasted.",
+    "user_id": "telegram_user_4487",
+    "pincode": "302030",
+    "district": "Jaipur Central",
+    "gemini_analysis": {
+      "category": "Water",
+      "urgency": 3,
+      "key_issue": "new water tank built but not connected cracked infrastructure waste",
+      "sentiment": "Disgusted",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_042",
+    "timestamp": "2026-09-05T08:15:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "ru-RU",
+    "original_text": "Подстанция устарела. Постоянные перебои в электроснабжении. Нужна модернизация.",
+    "translated_english_text": "The substation is outdated. Constant power supply interruptions. Modernization is needed.",
+    "user_id": "telegram_user_8821",
+    "pincode": "400050",
+    "district": "Mumbai North",
+    "gemini_analysis": {
+      "category": "Power",
+      "urgency": 3,
+      "key_issue": "outdated electrical substation constant outages need upgrade",
+      "sentiment": "Concerned",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_043",
+    "timestamp": "2026-09-05T09:00:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "te-IN",
+    "original_text": "మా గ్రామంలో ఇంకా విద్యుత్ సంబంధం లేదు. 2026 లో కూడా చీకటిలో ఉన్నాం.",
+    "translated_english_text": "Our village still has no electricity connection. Even in 2026 we are living in darkness.",
+    "user_id": "telegram_user_2278",
+    "pincode": "226030",
+    "district": "Lucknow West",
+    "gemini_analysis": {
+      "category": "Power",
+      "urgency": 5,
+      "key_issue": "village without electricity connection 2026",
+      "sentiment": "Desperate",
+      "affected_population_estimate": "Very High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_044",
+    "timestamp": "2026-09-05T10:15:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "en-US",
+    "original_text": "The new digital health kiosk installed last year is broken and has been lying idle. Huge investment gone to waste.",
+    "translated_english_text": "The new digital health kiosk installed last year is broken and has been lying idle. Huge investment gone to waste.",
+    "user_id": "telegram_user_5571",
+    "pincode": "500040",
+    "district": "Hyderabad North",
+    "gemini_analysis": {
+      "category": "Healthcare",
+      "urgency": 3,
+      "key_issue": "digital health kiosk broken lying idle investment waste",
+      "sentiment": "Frustrated",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_045",
+    "timestamp": "2026-09-05T11:00:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "bn-IN",
+    "original_text": "আমাদের এলাকার স্বাস্থ্যকেন্দ্রে সাপের কামড়ের ওষুধ নেই। গত মাসে একজন মারা গেছেন।",
+    "translated_english_text": "The health center in our area has no anti-venom. Someone died last month because of this.",
+    "user_id": "telegram_user_9943",
+    "pincode": "700090",
+    "district": "Kolkata West",
+    "gemini_analysis": {
+      "category": "Healthcare",
+      "urgency": 5,
+      "key_issue": "no anti-venom at health center patient death reported",
+      "sentiment": "Desperate",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_046",
+    "timestamp": "2026-09-05T12:30:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "hi-IN",
+    "original_text": "स्मार्ट सिटी योजना के तहत बने पार्क में लाइटें नहीं जलतीं। CCTV खराब है। सुरक्षा चिंताजनक है।",
+    "translated_english_text": "Lights in the park built under Smart City project do not work. CCTV is broken. Security is concerning.",
+    "user_id": "telegram_user_3392",
+    "pincode": "560040",
+    "district": "Bengaluru Central",
+    "gemini_analysis": {
+      "category": "Power",
+      "urgency": 3,
+      "key_issue": "smart city park lights and CCTV non-functional safety concern",
+      "sentiment": "Concerned",
+      "affected_population_estimate": "Medium",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_047",
+    "timestamp": "2026-09-05T13:15:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "ta-IN",
+    "original_text": "சாலை விரிவாக்க பணியால் பாதை குறுகியுள்ளது. பள்ளி வண்டி நுழைய முடியவில்லை. பிள்ளைகளுக்கு ஆபத்து.",
+    "translated_english_text": "The road widening work has narrowed the path. School bus cannot enter. Danger for children.",
+    "user_id": "telegram_user_6678",
+    "pincode": "110040",
+    "district": "Delhi South",
+    "gemini_analysis": {
+      "category": "Roads",
+      "urgency": 4,
+      "key_issue": "road construction narrowing path preventing school bus access",
+      "sentiment": "Worried",
+      "affected_population_estimate": "Medium",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_048",
+    "timestamp": "2026-09-05T14:00:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "pt-BR",
+    "original_text": "A rede de esgoto está transbordando na rua. Cheiro horrível e risco de doenças. Urgente.",
+    "translated_english_text": "The sewage network is overflowing in the street. Horrible smell and disease risk. Urgent.",
+    "user_id": "telegram_user_1187",
+    "pincode": "380060",
+    "district": "Ahmedabad East",
+    "gemini_analysis": {
+      "category": "Water",
+      "urgency": 5,
+      "key_issue": "sewage overflow on street disease risk public health emergency",
+      "sentiment": "Alarmed",
+      "affected_population_estimate": "High",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_049",
+    "timestamp": "2026-09-05T15:30:00Z",
+    "original_input_type": "voice",
+    "source_language_detected": "hi-IN",
+    "original_text": "पुल के नीचे बेघर लोग रह रहे हैं। उनके लिए कोई शेल्टर नहीं। सरकार को ध्यान देना चाहिए।",
+    "translated_english_text": "Homeless people are living under the bridge. No shelter for them. Government should pay attention.",
+    "user_id": "telegram_user_8867",
+    "pincode": "411018",
+    "district": "Pune Central",
+    "gemini_analysis": {
+      "category": "Healthcare",
+      "urgency": 3,
+      "key_issue": "homeless people without shelter social infrastructure gap",
+      "sentiment": "Empathetic",
+      "affected_population_estimate": "Low",
+      "infrastructure_type": "Services"
+    },
+    "status": "processed"
+  },
+  {
+    "report_id": "req_050",
+    "timestamp": "2026-09-05T16:45:00Z",
+    "original_input_type": "text",
+    "source_language_detected": "en-US",
+    "original_text": "I want to commend the BBMP team for quickly fixing the pothole on 5th Main within 24 hours of our report. This gives me confidence that the system works. Please maintain this speed.",
+    "translated_english_text": "I want to commend the BBMP team for quickly fixing the pothole on 5th Main within 24 hours of our report. This gives me confidence that the system works. Please maintain this speed.",
+    "user_id": "telegram_user_7742",
+    "pincode": "560060",
+    "district": "Bengaluru Central",
+    "gemini_analysis": {
+      "category": "Roads",
+      "urgency": 1,
+      "key_issue": "positive feedback pothole repaired 24h commendation",
+      "sentiment": "Satisfied",
+      "affected_population_estimate": "Low",
+      "infrastructure_type": "Physical"
+    },
+    "status": "processed"
+  }
+]

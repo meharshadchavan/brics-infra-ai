@@ -1,0 +1,154 @@
+# ─────────────────────────────────────────────────────────
+# BRICS InfraAI — .gitignore
+# Node.js + React + GCP + Hackathon project
+# ─────────────────────────────────────────────────────────
+
+# ── Environment & Secrets ────────────────────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# !! NEVER commit GCP credentials !!
+gcp-key.json
+*.json.key
+service-account*.json
+firebase-adminsdk*.json
+*credentials*.json
+google-credentials.json
+application_default_credentials.json
+
+# Telegram bot tokens or other secrets
+secrets/
+keys/
+certs/
+
+# ── Node.js ──────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+lerna-debug.log*
+package-lock.json.bak
+
+# ── Build Outputs ─────────────────────────────────────────
+dist/
+build/
+out/
+.output/
+.next/
+.nuxt/
+.cache/
+
+# Vite build cache
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# ── Coverage & Testing ────────────────────────────────────
+coverage/
+*.lcov
+.nyc_output/
+test-results/
+playwright-report/
+playwright/.cache/
+cypress/screenshots/
+cypress/videos/
+
+# ── Logs ─────────────────────────────────────────────────
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ── Runtime / OS ─────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Windows
+$RECYCLE.BIN/
+*.stackdump
+
+# Linux
+*~
+
+# ── IDEs & Editors ───────────────────────────────────────
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+!.vscode/extensions.json.recommended
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+*.swp
+*.swo
+*~
+.vim/
+
+# JetBrains
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ── Docker ────────────────────────────────────────────────
+# Keep docker-compose.yml but ignore local overrides
+docker-compose.override.yml
+docker-compose.local.yml
+
+# ── GCP / Firebase ───────────────────────────────────────
+.firebaserc
+.firebase/
+firestore-debug.log
+firebase-debug.log
+ui-debug.log
+
+# Google Cloud SDK
+.cloudsdk/
+.config/gcloud/
+
+# ── Temporary & Misc ──────────────────────────────────────
+tmp/
+temp/
+.tmp/
+*.tmp
+*.bak
+*.backup
+*.orig
+
+# Optional: generated API documentation
+docs/generated/
+
+# Hackathon scratch notes (keep your ideas local)
+scratch/
+notes/
+TODO.local.md
+
+# Optional npm pack output
+*.tgz
+
+# TypeScript
+*.tsbuildinfo
+
+# ── Keep these files tracked ─────────────────────────────
+# (explicit inclusions to override broad patterns above)
+!.env.example
+!data/*.json
+!.github/

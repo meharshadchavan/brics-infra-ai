@@ -1,0 +1,12 @@
+[
+  { "district": "Pune Central", "budget_allocated_millions": 120, "population_density_factor": 8 },
+  { "district": "Mumbai North", "budget_allocated_millions": 300, "population_density_factor": 10 },
+  { "district": "Delhi South", "budget_allocated_millions": 250, "population_density_factor": 9 },
+  { "district": "Chennai East", "budget_allocated_millions": 150, "population_density_factor": 7 },
+  { "district": "Kolkata West", "budget_allocated_millions": 90, "population_density_factor": 8 },
+  { "district": "Bengaluru Central", "budget_allocated_millions": 200, "population_density_factor": 9 },
+  { "district": "Hyderabad North", "budget_allocated_millions": 180, "population_density_factor": 7 },
+  { "district": "Ahmedabad East", "budget_allocated_millions": 110, "population_density_factor": 6 },
+  { "district": "Jaipur Central", "budget_allocated_millions": 80, "population_density_factor": 5 },
+  { "district": "Lucknow West", "budget_allocated_millions": 70, "population_density_factor": 6 }
+]
