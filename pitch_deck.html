@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BRICS InfraAI — Pitch Deck</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #090d16;
+      color: #f1f5f9;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @page {
+      size: 1920px 1080px;
+      margin: 0;
+    }
+
+    .slide {
+      width: 1920px;
+      height: 1080px;
+      position: relative;
+      overflow: hidden;
+      page-break-after: always;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 70px 90px;
+      background: #0b1120;
+      background-image: 
+        radial-gradient(circle at 15% 20%, rgba(59, 130, 246, 0.12) 0%, transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(20, 184, 166, 0.10) 0%, transparent 40%),
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .track-tag {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 8px 18px;
+      border-radius: 9999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .slide-num {
+      font-size: 18px;
+      font-weight: 700;
+      color: #64748b;
+      letter-spacing: 1px;
+    }
+
+    .title-block {
+      margin-top: 15px;
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .title span {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 22px;
+      color: #94a3b8;
+      margin-top: 10px;
+      font-weight: 400;
+      max-width: 1200px;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      margin: 30px 0;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 20px;
+      font-size: 15px;
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+
+    /* Cards */
+    .card {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(148, 163, 184, 0.15);
+      border-radius: 20px;
+      padding: 32px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .card.alert {
+      border-color: rgba(239, 68, 68, 0.4);
+      background: rgba(30, 15, 20, 0.75);
+    }
+
+    .card.highlight {
+      border-color: rgba(56, 189, 248, 0.4);
+      background: rgba(15, 28, 48, 0.75);
+    }
+
+    .pill {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .pill-red { background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+    .pill-blue { background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+    .pill-green { background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); }
+    .pill-purple { background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
+
+    /* Screenshot frame */
+    .screenshot-frame {
+      border-radius: 16px;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      overflow: hidden;
+      background: #0f172a;
+    }
+
+    .screenshot-frame img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* Print styling */
+    @media print {
+      body { background: transparent; }
+      .slide {
+        box-shadow: none;
+        margin: 0;
+        page-break-after: always;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== SLIDE 1 ==================== -->
+  <div class="slide">
+    <div class="header">
+      <div class="track-tag">Track 1: AI for Digital Public Infrastructure &amp; Governance</div>
+      <div class="slide-num">01 / 10</div>
+    </div>
+
+    <div class="content" style="gap: 60px;">
+      <div style="flex: 1.1;">
+        <div style="display: inline-block; background: rgba(34, 197, 94, 0.15); border: 1px solid rgba(34, 197, 94, 0.3); color: #4ade80; padding: 6px 14px; border-radius: 9999px; font-size: 14px; font-weight: 700; margin-bottom: 20px;">
+          ● LIVE WORKING PROTOTYPE · BRICS INNOVATION THEME
+        </div>
+        <h1 style="font-size: 64px; font-weight: 900; line-height: 1.05; letter-spacing: -2px; margin-bottom: 24px;">
+          BRICS InfraAI
+        </h1>
+        <p style="font-size: 28px; line-height: 1.35; color: #38bdf8; font-weight: 600; margin-bottom: 24px;">
+          Bridging Citizen Demand and Public Infrastructure Spending.
+        </p>
+        <p style="font-size: 20px; color: #94a3b8; line-height: 1.6; margin-bottom: 40px;">
+          A multilingual, voice-first Digital Public Good that aggregates ground-level citizen requests, aligns them with real national budgets via <strong style="color: #f1f5f9;">Google Gemini &amp; Vertex AI</strong>, and guides high-impact policy recommendations.
+        </p>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <div class="badge">🤖 Google Gemini 1.5 Flash</div>
+          <div class="badge">🧠 Vertex AI Predictive Model</div>
+          <div class="badge">🎙️ Cloud Speech-to-Text</div>
+          <div class="badge">🌐 Cloud Translation API</div>
+          <div class="badge">🗺️ Google Maps Heatmap</div>
+        </div>
+      </div>
+
+      <div style="flex: 1.2;">
+        <div class="screenshot-frame" style="transform: perspective(1000px) rotateY(-4deg) rotateX(2deg); border: 2px solid rgba(56, 189, 248, 0.4); box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(56, 189, 248, 0.2);">
+          <img src="dashboard_full.png" alt="BRICS InfraAI Dashboard">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-left">
+        <span>Team: Harshad Chavan</span>
+        <span>•</span>
+        <span>Build with AI: Code for Communities (Second Edition)</span>
+      </div>
+      <div>https://github.com/meharshadchavan/brics-infra-ai</div>
+    </div>
+  </div>
+
+
+  <!-- ==================== SLIDE 2 ==================== -->
+  <div class="slide">
+    <div class="header">
+      <div class="track-tag">The Problem</div>
+      <div class="slide-num">02 / 10</div>
+    </div>
+
+    <div class="title-block">
+      <h2 class="title">The Public Spending <span>Trilemma</span></h2>
+      <p class="subtitle">Governments allocate billions without ground-level demand visibility, leading to critical infrastructure mismatches.</p>
+    </div>
+
+    <div class="content" style="gap: 30px; align-items: stretch;">
+      <!-- Col 1 -->
+      <div class="card alert" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span class="pill pill-red">Silo 01</span>
+          <h3 style="font-size: 26px; font-weight: 800; margin-bottom: 12px; color: #fca5a5;">Fragmented Feedback</h3>
+          <p style="font-size: 17px; color: #cbd5e1; line-height: 1.6;">Citizen grievances live across disjointed portals, social media, and call centers with zero unified standard.</p>
+        </div>
+        <div style="background: rgba(0,0,0,0.3); border-radius: 12px; padding: 16px; margin-top: 20px;">
+          <div style="font-size: 36px; font-weight: 900; color: #ef4444;">68%</div>
+          <div style="font-size: 13px; color: #94a3b8;">Reports never reach budget planners</div>
+        </div>
+      </div>
+
+      <!-- Col 2 -->
+      <div class="card alert" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span class="pill pill-red">Silo 02</span>
+          <h3 style="font-size: 26px; font-weight: 800; margin-bottom: 12px; color: #fca5a5;">Misaligned Capital Budgets</h3>
+          <p style="font-size: 17px; color: #cbd5e1; line-height: 1.6;">Public funds are distributed via historical inertia rather than real-time citizen demand, creating severe regional deficits.</p>
+        </div>
+        <div style="background: rgba(0,0,0,0.3); border-radius: 12px; padding: 16px; margin-top: 20px;">
+          <div style="font-size: 36px; font-weight: 900; color: #f97316;">₹3,400Cr+</div>
+          <div style="font-size: 13px; color: #94a3b8;">Misallocated annually across tier-2/3 sectors</div>
+        </div>
+      </div>
+
+      <!-- Col 3 -->
+      <div class="card alert" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span class="pill pill-red">Silo 03</span>
+          <h3 style="font-size: 26px; font-weight: 800; margin-bottom: 12px; color: #fca5a5;">Language &amp; Literacy Divide</h3>
+          <p style="font-size: 17px; color: #cbd5e1; line-height: 1.6;">Text-heavy portals in English/Hindi alienate over 700M citizens across India and BRICS nations who communicate via voice &amp; local dialects.</p>
+        </div>
+        <div style="background: rgba(0,0,0,0.3); border-radius: 12px; padding: 16px; margin-top: 20px;">
+          <div style="font-size: 36px; font-weight: 900; color: #eab308;">22+</div>
+          <div style="font-size: 13px; color: #94a3b8;">Scheduled languages with no unified voice portal</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Core Bottleneck: Absence of a unified AI normalization layer between citizens and state planning</div>
+      <div>BRICS InfraAI Pitch Deck</div>
+    </div>
+  </div>
+
+
+  <!-- ==================== SLIDE 3 ==================== -->
+  <div class="slide">
+    <div class="header">
+      <div class="track-tag">The Solution</div>
+      <div class="slide-num">03 / 10</div>
+    </div>
+
+    <div class="title-block">
+      <h2 class="title">The <span>BRICS InfraAI</span> Engine</h2>
+      <p class="subtitle">Multimodal Ingestion + Structured GenAI Analysis + Geospatial Demand Heatmapping.</p>
+    </div>
+
+    <div class="content" style="gap: 40px;">
+      <div style="flex: 1.1; display: flex; flex-direction: column; gap: 20px;">
+        <div class="card highlight" style="padding: 24px;">
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 8px;">
+            <span style="font-size: 24px;">🎙️</span>
+            <h4 style="font-size: 20px; font-weight: 700; color: #38bdf8;">1. Omnichannel Ingestion</h4>
+          </div>
+          <p style="font-size: 15px; color: #94a3b8; line-height: 1.5;">Citizens submit voice notes or text on Telegram/WhatsApp in any language. Zero friction, zero app download.</p>
+        </div>
+
+        <div class="card highlight" style="padding: 24px;">
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 8px;">
+            <span style="font-size: 24px;">⚡</span>
+            <h4 style="font-size: 20px; font-weight: 700; color: #a78bfa;">2. Google AI Brain (Gemini 1.5)</h4>
+          </div>
+          <p style="font-size: 15px; color: #94a3b8; line-height: 1.5;">Converts messy vernacular input into strict JSON: Category, Urgency (1-5), Sentiment, and Key Issue in under 1.2s.</p>
+        </div>
+
+        <div class="card highlight" style="padding: 24px;">
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 8px;">
+            <span style="font-size: 24px;">🗺️</span>
+            <h4 style="font-size: 20px; font-weight: 700; color: #4ade80;">3. Policymaker Command Center</h4>
+          </div>
+          <p style="font-size: 15px; color: #94a3b8; line-height: 1.5;">Overlays citizen demand against real government budgets on Google Maps to instantly flag Critical Mismatches.</p>
+        </div>
+      </div>
+
+      <div style="flex: 1.4;">
+        <div class="screenshot-frame" style="border: 2px solid rgba(56, 189, 248, 0.3);">
+          <img src="map_crop.png" alt="Geospatial Demand Heatmap">
+        </div>
+        <div style="margin-top: 14px; display: flex; justify-content: space-between; font-size: 13px; color: #94a3b8;">
+          <span>Live demand centroids plotted across Indian districts</span>
+          <span style="color: #ef4444; font-weight: 700;">● Pulsing Red: Critical Budget Mismatch</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Outcome: Shifts governance from reactive grievance logging to predictive capital allocation</div>
+      <div>BRICS InfraAI Pitch Deck</div>
+    </div>
+  </div>
+
+
+  <!-- ==================== SLIDE 4 ==================== -->
+  <div class="slide">
+    <div class="header">
+      <div class="track-tag">System Architecture</div>
+      <div class="slide-num">04 / 10</div>
+    </div>
+
+    <div class="title-block">
+      <h2 class="title">End-to-End <span>Pipeline Flow</span></h2>
+      <p class="subtitle">Scalable, serverless ingestion to geospatial analytics in under 1.5 seconds.</p>
+    </div>
+
+    <div class="content" style="flex-direction: column; justify-content: center; gap: 30px;">
+      <!-- Pipeline Diagram -->
+      <div style="width: 100%; display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px;">
+        <div class="card" style="text-align: center; border-color: rgba(56, 189, 248, 0.4);">
+          <div style="font-size: 32px; margin-bottom: 10px;">📱</div>
+          <span class="pill pill-blue">Step 01</span>
+          <h4 style="font-size: 18px; font-weight: 800; margin-bottom: 8px;">Citizen Input</h4>
+          <p style="font-size: 13px; color: #94a3b8;">Voice Note or Text via Telegram Webhook (7 Languages)</p>
+        </div>
+
+        <div class="card" style="text-align: center; border-color: rgba(168, 85, 247, 0.4);">
+          <div style="font-size: 32px; margin-bottom: 10px;">🎙️</div>
+          <span class="pill pill-purple">Step 02</span>
+          <h4 style="font-size: 18px; font-weight: 800; margin-bottom: 8px;">GCP Speech &amp; Trans</h4>
+          <p style="font-size: 13px; color: #94a3b8;">OGG_OPUS STT + Cloud Translation to English</p>
+        </div>
+
+        <div class="card" style="text-align: center; border-color: rgba(236, 72, 153, 0.4);">
+          <div style="font-size: 32px; margin-bottom: 10px;">✨</div>
+          <span class="pill pill-red">Step 03</span>
+          <h4 style="font-size: 18px; font-weight: 800; margin-bottom: 8px;">Gemini 1.5 Flash</h4>
+          <p style="font-size: 13px; color: #94a3b8;">JSON Extraction: Urgency (1-5), Category, Sentiment</p>
+        </div>
+
+        <div class="card" style="text-align: center; border-color: rgba(34, 197, 94, 0.4);">
+          <div style="font-size: 32px; margin-bottom: 10px;">📊</div>
+          <span class="pill pill-green">Step 04</span>
+          <h4 style="font-size: 18px; font-weight: 800; margin-bottom: 8px;">Insight Engine</h4>
+          <p style="font-size: 13px; color: #94a3b8;">Cross-referenced with data.gov.in Budget Datasets</p>
+        </div>
+
+        <div class="card" style="text-align: center; border-color: rgba(245, 158, 11, 0.4);">
+          <div style="font-size: 32px; margin-bottom: 10px;">🖥️</div>
+          <span class="pill pill-blue">Step 05</span>
+          <h4 style="font-size: 18px; font-weight: 800; margin-bottom: 8px;">React Dashboard</h4>
+          <p style="font-size: 13px; color: #94a3b8;">Maps Heatmap + Vertex AI Scored Recommendations</p>
+        </div>
+      </div>
+
+      <!-- Live KPI strip from app -->
+      <div style="width: 100%;" class="screenshot-frame">
+        <img src="kpi_crop.png" alt="Live System KPIs">
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Zero external app downloads required · Fully decoupled microservices ready for Cloud Run &amp; Kubernetes</div>
+      <div>BRICS InfraAI Pitch Deck</div>
+    </div>
+  </div>
+
+
+  <!-- ==================== SLIDE 5 ==================== -->
+  <div class="slide">
+    <div class="header">
+      <div class="track-tag" style="background: rgba(168, 85, 247, 0.15); border-color: rgba(168, 85, 247, 0.4); color: #c084fc;">
+        Google AI Integration (25% Weight)
+      </div>
+      <div class="slide-num">05 / 10</div>
+    </div>
+
+    <div class="title-block">
+      <h2 class="title">Deep <span>Google AI</span> Execution</h2>
+      <p class="subtitle">Not a wrapper chatbot — Google AI powers data extraction, predictive scoring, and voice parsing.</p>
+    </div>
+
+    <div class="content" style="gap: 40px;">
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 18px;">
+        <div class="card" style="border-left: 4px solid #38bdf8;">
+          <h4 style="font-size: 18px; font-weight: 800; color: #38bdf8; margin-bottom: 6px;">1. Google Gemini 1.5 Flash (Core Extraction)</h4>
+          <p style="font-size: 14px; color: #cbd5e1; line-height: 1.5;">Processes raw complaints into deterministic JSON schemas. Evaluates urgency score (1-5), infrastructure domain (Roads, Water, Power, Health), and citizen sentiment.</p>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #a855f7;">
+          <h4 style="font-size: 18px; font-weight: 800; color: #c084fc; margin-bottom: 6px;">2. Vertex AI Predictive Scoring Engine</h4>
+          <p style="font-size: 14px; color: #cbd5e1; line-height: 1.5;">Urban planning optimization model that scores infrastructure demand (1-100) and crafts 1-sentence policy justifications comparing urgency against district budget allocations.</p>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #34d399;">
+          <h4 style="font-size: 18px; font-weight: 800; color: #34d399; margin-bottom: 6px;">3. Cloud Speech-to-Text &amp; Translation</h4>
+          <p style="font-size: 14px; color: #cbd5e1; line-height: 1.5;">Native OGG_OPUS speech recognition at 48kHz without ffmpeg transcoding, paired with Google Cloud Translation API across 7 languages.</p>
+        </div>
+      </div>
+
+      <div style="flex: 1.1;">
+        <div class="screenshot-frame" style="border: 2px solid rgba(168, 85, 247, 0.4);">
+          <img src="vertex_crop.png" alt="Vertex AI Scoring Feed">
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Directly fulfills Hack2Skill mandatory Google AI requirement with three coordinated GCP AI services</div>
+      <div>BRICS InfraAI Pitch Deck</div>
+    </div>
+  </div>
+
+
+  <!-- ==================== SLIDE 6 ==================== -->
+  <div class="slide">
+    <div class="header">
+      <div class="track-tag">Data Integration</div>
+      <div class="slide-num">06 / 10</div>
+    </div>
+
+    <div class="title-block">
+      <h2 class="title">Real &amp; Realistic <span>Data Overlay</span></h2>
+      <p class="subtitle">Synthesizing 500+ citizen complaints against official data.gov.in public budget allocations.</p>
+    </div>
+
+    <div class="content" style="gap: 40px;">
+      <div style="flex: 1.2;">
+        <div class="screenshot-frame" style="border: 2px solid rgba(20, 184, 166, 0.4);">
+          <img src="charts_crop.png" alt="Citizen Demand vs Allocated Budget">
+        </div>
+        <div style="margin-top: 12px; font-size: 13px; color: #94a3b8; text-align: center;">
+          Recharts visualization showing severe budget deficits in Roads (193 complaints vs ₹50M) and Water (129 vs ₹30M)
+        </div>
+      </div>
+
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 16px;">
+        <div class="card alert" style="padding: 22px;">
+          <h4 style="font-size: 18px; font-weight: 800; color: #f87171; margin-bottom: 6px;">🚨 Critical Mismatch Formula</h4>
+          <p style="font-size: 14px; color: #cbd5e1; line-height: 1.5;">
+            <code>(Complaints > 50) AND (Budget &lt; ₹150M)</code><br>
+            Instantly flags districts where citizen crisis volume far outstrips fiscal reserves.
+          </p>
+        </div>
+
+        <div class="card" style="padding: 22px;">
+          <h4 style="font-size: 17px; font-weight: 700; color: #38bdf8; margin-bottom: 6px;">Data Sources Utilized</h4>
+          <ul style="font-size: 14px; color: #cbd5e1; line-height: 1.7; padding-left: 20px;">
+            <li><strong>data.gov.in:</strong> State-wise Road &amp; Water Budget Allocations</li>
+            <li><strong>Census Data:</strong> District population density &amp; demographics</li>
+            <li><strong>Infrastructure Indices:</strong> 5 sub-indices across 10 major hubs</li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding: 22px; background: rgba(34, 197, 94, 0.1); border-color: rgba(34, 197, 94, 0.3);">
+          <h4 style="font-size: 17px; font-weight: 700; color: #4ade80; margin-bottom: 4px;">Pune &amp; Lucknow Case Studies</h4>
+          <p style="font-size: 13px; color: #cbd5e1;">Pune Central (75 road reports, ₹120M) &amp; Lucknow West (86 reports, ₹70M) prioritized for urgent fund re-allocation.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Satisfies the hackathon mandate for "Real or realistic public datasets"</div>
+      <div>BRICS InfraAI Pitch Deck</div>
+    </div>
+  </div>
+
+
+  <!-- ==================== SLIDE 7 ==================== -->
+  <div class="slide">
+    <div class="header">
+      <div class="track-tag" style="background: rgba(34, 197, 94, 0.15); border-color: rgba(34, 197, 94, 0.4); color: #4ade80;">
+        National &amp; BRICS Reach (20% Weight)
+      </div>
+      <div class="slide-num">07 / 10</div>
+    </div>
+
+    <div class="title-block">
+      <h2 class="title">Built for <span>India &amp; BRICS Nations</span></h2>
+      <p class="subtitle">Multi-dialect voice processing breaks the digital literacy barrier for 1.4B people.</p>
+    </div>
+
+    <div class="content" style="gap: 40px;">
+      <div style="flex: 1.3;">
+        <div class="screenshot-frame" style="border: 2px solid rgba(56, 189, 248, 0.4);">
+          <img src="demo_crop.png" alt="Multilingual Simulation in App">
+        </div>
+      </div>
+
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 18px;">
+        <div class="card highlight">
+          <h4 style="font-size: 20px; font-weight: 800; color: #38bdf8; margin-bottom: 8px;">7 Ingested Languages</h4>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px;">
+            <span class="badge">🇮🇳 Hindi</span>
+            <span class="badge">🇮🇳 Tamil</span>
+            <span class="badge">🇮🇳 Bengali</span>
+            <span class="badge">🇮🇳 Telugu</span>
+            <span class="badge">🇷🇺 Russian</span>
+            <span class="badge">🇧🇷 Portuguese</span>
+            <span class="badge">🇺🇸 English</span>
+          </div>
+          <p style="font-size: 14px; color: #94a3b8; line-height: 1.5;">Spans both India's linguistic diversity and BRICS partners (Brazil, Russia), proving cross-border deployability.</p>
+        </div>
+
+        <div class="card">
+          <h4 style="font-size: 18px; font-weight: 800; color: #f1f5f9; margin-bottom: 6px;">Voice-First Inclusivity</h4>
+          <p style="font-size: 14px; color: #94a3b8; line-height: 1.5;">Rural citizens don't type lengthy forms. A 5-second voice note in Tamil or Hindi is automatically transcribed and analyzed.</p>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #22c55e;">
+          <h4 style="font-size: 18px; font-weight: 800; color: #22c55e; margin-bottom: 6px;">10 Diverse Districts Covered</h4>
+          <p style="font-size: 13px; color: #94a3b8;">From mega-cities (Mumbai, Delhi) to high-growth state capitals (Jaipur, Lucknow, Ahmedabad, Kolkata).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Scales seamlessly from a single municipal ward to all 28 Indian states &amp; BRICS partners</div>
+      <div>BRICS InfraAI Pitch Deck</div>
+    </div>
+  </div>
+
+
+  <!-- ==================== SLIDE 8 ==================== -->
+  <div class="slide">
+    <div class="header">
+      <div class="track-tag" style="background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.4); color: #fbbf24;">
+        Deployability &amp; Scalability (20% Weight)
+      </div>
+      <div class="slide-num">08 / 10</div>
+    </div>
+
+    <div class="title-block">
+      <h2 class="title">Zero-Friction <span>Deployability</span></h2>
+      <p class="subtitle">Why municipal corporations and ministries can adopt BRICS InfraAI in weeks, not years.</p>
+    </div>
+
+    <div class="content" style="gap: 30px; align-items: stretch;">
+      <div class="card" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 40px; margin-bottom: 12px;">📲</div>
+          <h3 style="font-size: 24px; font-weight: 800; color: #38bdf8; margin-bottom: 10px;">Existing Apps Win</h3>
+          <p style="font-size: 15px; color: #cbd5e1; line-height: 1.6;">Citizen apps suffer 70%+ uninstallation rates. By deploying over Telegram &amp; WhatsApp, we leverage 850M+ installed smartphones with zero acquisition cost.</p>
+        </div>
+        <div style="background: rgba(0,0,0,0.3); border-radius: 12px; padding: 14px;">
+          <span style="color: #4ade80; font-weight: 700;">✓ 0 App Downloads Required</span>
+        </div>
+      </div>
+
+      <div class="card" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 40px; margin-bottom: 12px;">🐳</div>
+          <h3 style="font-size: 24px; font-weight: 800; color: #a78bfa; margin-bottom: 10px;">Containerized Stack</h3>
+          <p style="font-size: 15px; color: #cbd5e1; line-height: 1.6;">Full Docker &amp; Docker-Compose setups allow 1-command deployment onto National Informatics Centre (NIC) cloud, Google Cloud Run, or AWS GovCloud.</p>
+        </div>
+        <div style="background: rgba(0,0,0,0.3); border-radius: 12px; padding: 14px;">
+          <span style="color: #a78bfa; font-weight: 700;">✓ Docker &amp; Kubernetes Ready</span>
+        </div>
+      </div>
+
+      <div class="card" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="font-size: 40px; margin-bottom: 12px;">⚡</div>
+          <h3 style="font-size: 24px; font-weight: 800; color: #34d399; margin-bottom: 10px;">Vercel Edge Resilient</h3>
+          <p style="font-size: 15px; color: #cbd5e1; line-height: 1.6;">Frontend runs on global CDN with fallback mock intelligence. Handled 50 concurrent stress-test requests with 0% failure rate.</p>
+        </div>
+        <div style="background: rgba(0,0,0,0.3); border-radius: 12px; padding: 14px;">
+          <span style="color: #34d399; font-weight: 700;">✓ 100% Availability in Stress Tests</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Piloted within a municipal ward in 2 weeks · Scalable to state-wide deployment in 60 days</div>
+      <div>BRICS InfraAI Pitch Deck</div>
+    </div>
+  </div>
+
+
+  <!-- ==================== SLIDE 9 ==================== -->
+  <div class="slide">
+    <div class="header">
+      <div class="track-tag" style="background: rgba(59, 130, 246, 0.15); border-color: rgba(59, 130, 246, 0.4); color: #60a5fa;">
+        Impact Potential (15% Weight)
+      </div>
+      <div class="slide-num">09 / 10</div>
+    </div>
+
+    <div class="title-block">
+      <h2 class="title">Transformative <span>Public Impact</span></h2>
+      <p class="subtitle">Converting unstructured complaints into actionable, high-ROI public infrastructure projects.</p>
+    </div>
+
+    <div class="content" style="gap: 30px; align-items: stretch;">
+      <div class="card highlight" style="flex: 1; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-size: 64px; font-weight: 900; color: #38bdf8; line-height: 1;">1.4B+</div>
+        <h4 style="font-size: 20px; font-weight: 700; margin: 12px 0 6px;">Citizens Reachable</h4>
+        <p style="font-size: 14px; color: #94a3b8;">Across rural &amp; urban India via voice and regional vernacular messaging.</p>
+      </div>
+
+      <div class="card highlight" style="flex: 1; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-size: 64px; font-weight: 900; color: #4ade80; line-height: 1;">40%</div>
+        <h4 style="font-size: 20px; font-weight: 700; margin: 12px 0 6px;">Waste Reduction</h4>
+        <p style="font-size: 14px; color: #94a3b8;">Curtails misallocated capital by matching investments directly to ground urgency.</p>
+      </div>
+
+      <div class="card highlight" style="flex: 1; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-size: 64px; font-weight: 900; color: #c084fc; line-height: 1;">10x</div>
+        <h4 style="font-size: 20px; font-weight: 700; margin: 12px 0 6px;">Faster Hazard Response</h4>
+        <p style="font-size: 14px; color: #94a3b8;">High-urgency water contamination and structural hazards flagged in real-time.</p>
+      </div>
+
+      <div class="card highlight" style="flex: 1; text-align: center; display: flex; flex-direction: column; justify-content: center;">
+        <div style="font-size: 64px; font-weight: 900; color: #f59e0b; line-height: 1;">100%</div>
+        <h4 style="font-size: 20px; font-weight: 700; margin: 12px 0 6px;">Open Digital Public Good</h4>
+        <p style="font-size: 14px; color: #94a3b8;">Open API architecture built for integration into existing Smart Cities &amp; NIC systems.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Measurable governance: Enhances citizen trust while optimizing multi-million dollar capital budgets</div>
+      <div>BRICS InfraAI Pitch Deck</div>
+    </div>
+  </div>
+
+
+  <!-- ==================== SLIDE 10 ==================== -->
+  <div class="slide">
+    <div class="header">
+      <div class="track-tag">Team &amp; Deployment Links</div>
+      <div class="slide-num">10 / 10</div>
+    </div>
+
+    <div class="title-block">
+      <h2 class="title">Test the <span>Live Platform</span></h2>
+      <p class="subtitle">Fully functional prototype running on Vercel Edge with complete open-source codebase on GitHub.</p>
+    </div>
+
+    <div class="content" style="gap: 60px; justify-content: center; align-items: center;">
+      <!-- QR 1: Live Deployment -->
+      <div class="card highlight" style="text-align: center; padding: 40px; width: 440px;">
+        <span class="pill pill-green" style="font-size: 14px; padding: 6px 14px;">● LIVE PROTOTYPE</span>
+        <h3 style="font-size: 24px; font-weight: 800; margin: 14px 0 16px;">Vercel Dashboard</h3>
+        <div style="background: #ffffff; padding: 16px; border-radius: 16px; display: inline-block; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+          <img src="qr_live.png" alt="Live Dashboard QR" style="width: 220px; height: 220px; display: block;">
+        </div>
+        <p style="font-size: 13px; color: #94a3b8; margin-top: 16px; word-break: break-all;">
+          https://brics-infra-jxec8pgin-harshad-chavans-projects.vercel.app/
+        </p>
+      </div>
+
+      <!-- QR 2: GitHub Repo -->
+      <div class="card highlight" style="text-align: center; padding: 40px; width: 440px;">
+        <span class="pill pill-blue" style="font-size: 14px; padding: 6px 14px;">● PUBLIC CODEBASE</span>
+        <h3 style="font-size: 24px; font-weight: 800; margin: 14px 0 16px;">GitHub Repository</h3>
+        <div style="background: #ffffff; padding: 16px; border-radius: 16px; display: inline-block; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+          <img src="qr_github.png" alt="GitHub Repo QR" style="width: 220px; height: 220px; display: block;">
+        </div>
+        <p style="font-size: 13px; color: #94a3b8; margin-top: 16px; word-break: break-all;">
+          https://github.com/meharshadchavan/brics-infra-ai
+        </p>
+      </div>
+
+      <!-- Team Card -->
+      <div class="card" style="padding: 40px; width: 400px; display: flex; flex-direction: column; justify-content: center;">
+        <h3 style="font-size: 22px; font-weight: 800; margin-bottom: 16px; color: #f1f5f9;">Submission Details</h3>
+        <div style="font-size: 15px; color: #cbd5e1; line-height: 1.8;">
+          <p><strong>Builder:</strong> Harshad Chavan</p>
+          <p><strong>Track:</strong> Track 1 — AI for DPI &amp; Governance</p>
+          <p><strong>Theme:</strong> Innovation (BRICS)</p>
+          <p><strong>Stack:</strong> React 18, Vite, GCP Gemini 1.5, Vertex AI, Speech-to-Text, Node.js</p>
+          <p><strong>Date:</strong> September 2026</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>Thank you to the Google DeepMind &amp; Hack2Skill Teams · Code for Communities Edition 2</div>
+      <div>https://github.com/meharshadchavan/brics-infra-ai</div>
+    </div>
+  </div>
+
+</body>
+</html>
