@@ -76,9 +76,10 @@ export default function PolicymakerDashboard() {
   const fetchData = useCallback(async (showSpinner = false) => {
     if (showSpinner) setRefreshing(true);
     try {
+      const apiBase = import.meta.env.VITE_BACKEND_URL ? import.meta.env.VITE_BACKEND_URL.replace(/\/$/, '') : '';
       const [statsRes, insightsRes] = await Promise.all([
-        fetch('/api/stats'),
-        fetch('/api/insights'),
+        fetch(`${apiBase}/api/stats`),
+        fetch(`${apiBase}/api/insights`),
       ]);
       if (!statsRes.ok || !insightsRes.ok) throw new Error('API error');
 
@@ -543,7 +544,8 @@ function SimulatePanel() {
     await new Promise(r => setTimeout(r, 800));
 
     try {
-      const res = await fetch('/api/simulate', {
+      const apiBase = import.meta.env.VITE_BACKEND_URL ? import.meta.env.VITE_BACKEND_URL.replace(/\/$/, '') : '';
+      const res = await fetch(`${apiBase}/api/simulate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text, language: lang, pincode }),
